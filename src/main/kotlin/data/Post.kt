@@ -6,5 +6,9 @@ data class Post(
     val authorName: String,
     val content: String,
     val created: Long,
+    val likes: Likes,
+)
+
+data class Likes(
     val likes: Int
 )

@@ -20,7 +20,7 @@ object WallService {
                     id = post.id,
                     authorName = post.authorName,
                     content = post.content,
-                    likes = post.likes
+                    likes = post.likes,
                 )
                 postUpdating = true
                 println("Updating post with id ${post.id}: ${postsArr[idx]}")
