@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>main.kt</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Posts</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">main.kt</span></div><h1>main.kt</h1><pre class="source lang-java linenums">import data.Post
+import service.WallService
+
+fun main() {
+    //РЎРѕР·РґР°РґРёРј РЅРµСЃРєРѕР»СЊРєРѕ РїРѕСЃС‚РѕРІ Рё РґРѕР±Р°РІРёРј РёС… РЅР° СЃС‚РµРЅСѓ
+<span class="nc" id="L6">    WallService.add(Post(authorId = 1, authorName = &quot;test&quot;, content = &quot;Test content&quot;, created = 20220423, likes = 0))</span>
+<span class="nc" id="L7">    WallService.add(Post(authorId = 2, authorName = &quot;user&quot;, content = &quot;Test content 1&quot;, created = 20220425, likes = 0))</span>
+<span class="nc" id="L8">    WallService.add(Post(authorId = 1, authorName = &quot;test&quot;, content = &quot;Test content 2&quot;, created = 20220425, likes = 0))</span>
+
+    /*РћР±РЅРѕРІРёРј РїРѕСЃС‚ СЃ id=2 (РёР·РјРµРЅРёРј РєРѕРЅС‚РµРЅС‚ Рё Р»Р°Р№РєРё, РїСЂРё СЌС‚РѕРј СЃРїРµС†РёР°Р»СЊРЅРѕ СѓРєР°Р¶РµРј РІ РїРѕСЃС‚Рµ РґСЂСѓРіРѕР№ id Р°РІС‚РѕСЂР° Рё РґР°С‚Сѓ СЃРѕР·РґР°РЅРёСЏ,
+     С‡С‚РѕР±С‹ СѓР±РµРґРёС‚СЊСЃСЏ С‡С‚Рѕ РѕРЅРё РЅРµ РёР·РјРµРЅРёР»РёСЃСЊ РїРѕ СѓСЃР»РѕРІРёСЋ Р”Р—)*/
+<span class="nc" id="L12">    WallService.update(Post(2, 3, &quot;user&quot;, &quot;Content after updating&quot;, 19990105, 16))</span>
+<span class="nc" id="L13">}</span>
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
